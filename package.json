@@ -1,0 +1,27 @@
+{
+  "name": "switcheroo-dot",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "art:build": "node tools/resources/art.mjs build",
+    "art:verify": "node tools/resources/art.mjs verify",
+    "art:sheet": "node tools/resources/art.mjs sheet",
+    "audio:build": "node --experimental-strip-types tools/resources/audio-pack.ts build",
+    "audio:check": "node --experimental-strip-types tools/resources/audio-pack.ts check",
+    "content:check": "node tools/qa/content-check.mjs",
+    "sync": "node tools/resources/sync-godot.mjs",
+    "sync:verify": "node tools/resources/sync-godot.mjs --verify",
+    "dev": "node tools/godot/cli.mjs dev",
+    "godot:import": "node tools/godot/cli.mjs import",
+    "godot:test": "node tools/godot/cli.mjs test && node tools/godot/cli.mjs smoke",
+    "sim": "node tools/godot/cli.mjs sim",
+    "shots": "node tools/godot/cli.mjs shots",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "check": "npm run repo:check && npm run art:verify && npm run audio:check && npm run content:check && npm run sync:verify && npm test && npm run godot:test && npm run sim",
+    "repo:check": "node tools/qa/repository-check.mjs"
+  }
+}

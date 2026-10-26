@@ -1,0 +1,40 @@
+; Switcheroo isolated native project. Generated resource copies are managed by sync.
+config_version=5
+
+[application]
+config/name="掉包记 · Switcheroo"
+run/main_scene="res://scenes/title.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/use_custom_user_dir=true
+config/custom_user_dir_name="switcheroo-dot"
+
+[display]
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/window_width_override=1920
+window/size/window_height_override=1080
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+window/stretch/scale_mode="integer"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
+
+[importer_defaults]
+wav={
+"compress/mode": 0,
+"edit/normalize": false,
+"edit/trim": false
+}
+font_data_dynamic={
+"antialiasing": 0,
+"hinting": 0,
+"subpixel_positioning": 0,
+"oversampling": 1.0,
+"allow_system_fallback": false
+}

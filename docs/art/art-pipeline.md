@@ -106,6 +106,10 @@ npm run art:sheet    # 生成 export/sheets/*.png 对照表（3 倍最近邻放�
 
 使用 Fusion Pixel 12px（OFL-1.1，支持简体中文）。从 rpg2d-dot 的 `third_party/fonts/fusion-pixel-12px/` 拷贝字体文件和**全部许可证文件**，上游是 <https://github.com/TakWolf/fusion-pixel-font>。Godot 里关闭抗锯齿、关闭 hinting、整数像素对齐；字号只用 12（正文）和 24（12 的整数倍放大，用于大标题）。游戏内文字一律由字体渲染，不画进图片（插画里的招牌之类装饰字除外）。
 
+### D0 字体落地
+
+从 Fusion Pixel 官方 2026.10.25 发行版直接取得 12px 简体等宽字体与所有许可通知，未读取其他游戏仓库。完整版超过单文件 2 MB 限制，因此以 `tools/resources/subset-font.py` 保留项目文案和 ASCII，字形不改并更名为 Switcheroo Pixel 12；来源与哈希见 `third_party/fonts/fusion-pixel-12px/provenance.json`。新增文案须通过字体覆盖测试，必要时重建子集。
+
 ## 7 动画规范
 
 - 所有运动都画进 PNG 帧里；运行时只选帧、移动节点位置，不做旋转、缩放、扭曲像素（整体弹跳、抖动、位移可以，但位移必须是整数像素）。

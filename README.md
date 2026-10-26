@@ -8,7 +8,9 @@
 
 ## 当前状态
 
-尚未开工，只有设计文档。从 [docs/README.md](docs/README.md) 开始读；开发规则见 [AGENTS.md](AGENTS.md)。
+D0 地基已实现：原创代码像素戏台与杯戏师、4 个确定性合成声音、内容检查与单向同步、Godot 标题、无界面测试。**当前不是可战斗试玩版**；三出故事、对戏、排练与自动策略属于 D1。
+
+已检查的[标题画面](artifacts/screenshots/d0-title-3x.png)是原生 640×360 视口的精确 3 倍最近邻展示，不是 1920×1080 实际桌面截图。验证范围与限制见 [D0 验收记录](artifacts/reports/d0-acceptance.md)。开发规则见 [AGENTS.md](AGENTS.md)。
 
 ## 目录
 
@@ -25,12 +27,30 @@
 
 详细规则见 [docs/tech/repository-layout.md](docs/tech/repository-layout.md)。
 
-## 运行（开发开始后补全）
+## 运行与验证
 
 需要 Node.js 22.13+ 和 Godot 4.7.2。
 
 ```sh
+# 先将 GODOT_BIN 指向本机 Godot 4.7.2 可执行文件
 npm ci
 npm run sync
+npm run godot:import
+npm run check
 npm run dev
 ```
+
+资源导出已提交，正常运行不需要先重建美术/声音，也不需要网络。要重建：
+
+```sh
+npm run art:build && npm run art:verify && npm run art:sheet
+npm run audio:build && npm run audio:check
+npm run sync && npm run godot:import
+npm run check
+```
+
+`npm run shots` 需要原生图形桌面，导出 `artifacts/screenshots/d0-title-1x.png` 和精确最近邻 3× 展示图。无界面测试不需要桌面。CLI 严格检查 Godot 4.7.2，避免误用 PATH 中其他版本。
+
+工具启动的 Godot 使用项目专属 `.local/` 下的 HOME/XDG 目录及 `switcheroo-dot` 存档名，不与其他游戏共享存档。应用遇到 Dummy 音频驱动时只验证并加载音频，不假装能听到声音；正常音频后端第一次点击后启声。当前云端没有可听音频设备，因此听感与 macOS 真机运行尚未验证。
+
+字体来自 Fusion Pixel 官方发行版，以 OFL 许可保留当前项目字形子集；全部许可、来源及重建说明见 `third_party/fonts/fusion-pixel-12px/`。

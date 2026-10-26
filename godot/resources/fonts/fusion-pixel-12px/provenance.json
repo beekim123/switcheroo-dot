@@ -1,0 +1,12 @@
+{
+  "format": "font-provenance/1",
+  "upstream": "https://github.com/TakWolf/fusion-pixel-font/releases/tag/2026.10.25",
+  "upstream_filename": "fusion-pixel-12px-monospaced-zh_hans.ttf",
+  "upstream_sha256": "4f88a73ed18ba0ee0498df001b01665f38f6057ede048041d089f13a5fb751c5",
+  "modification": "Subset to project text plus ASCII; renamed Switcheroo Pixel 12; glyph outlines unchanged",
+  "glyph_codepoints": 1356,
+  "file": "switcheroo-pixel-12.ttf",
+  "size_bytes": 239392,
+  "sha256": "67b5d6bc94268f0d01c0756253cfb6e2ff31ad54fc856fae4fc974af9eb6684e",
+  "license": "OFL-1.1; all bundled notices preserved"
+}

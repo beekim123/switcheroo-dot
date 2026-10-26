@@ -1,0 +1,54 @@
+{
+  "format": "art/1",
+  "assets": [
+    {
+      "id": "char.cupper",
+      "file": "char/cupper.png",
+      "size": [
+        24,
+        32
+      ],
+      "frames": 4,
+      "anchor": [
+        12,
+        31
+      ],
+      "animations": {
+        "idle": {
+          "fps": 4,
+          "loop": true,
+          "frames": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            2,
+            2,
+            0,
+            3,
+            0
+          ]
+        }
+      },
+      "hash": "eeccbc2287869bd187760d90c414291f317ab6a316bb8a89798186c51f64a6de"
+    },
+    {
+      "id": "stage.frame",
+      "file": "stage/frame.png",
+      "size": [
+        640,
+        360
+      ],
+      "frames": 1,
+      "anchor": [
+        0,
+        0
+      ],
+      "animations": {},
+      "hash": "63a20f5c1754282cc0f40f458ae8e0c25c3e0bec206c2f07bb8ee6c86cc0bd6e"
+    }
+  ]
+}

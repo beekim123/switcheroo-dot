@@ -1,0 +1,15 @@
+{
+  "title": "掉包记",
+  "subtitle": "一个能力，越用越多用法。",
+  "chapter": "双月夜 · 乡间戏班",
+  "action": "掀杯试音",
+  "status": "D0 · 戏台搭建中",
+  "note": "换位、识破与三出故事将在下一阶段登台。",
+  "art_ids": [
+    "stage.frame",
+    "char.cupper"
+  ],
+  "audio_ids": [
+    "music.d0_theme"
+  ]
+}

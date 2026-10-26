@@ -1,0 +1,62 @@
+{
+  "scope": "D0 synthesized audio numerical checks; listening is a separate manual check",
+  "passed": true,
+  "assets": [
+    {
+      "id": "sfx.cup_down",
+      "file": "cup_down.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "format": "PCM16",
+      "seconds": 0.22,
+      "loop": false,
+      "hash": "005b24cb182d4cba9abaf27e1964d28a2aebb4a95e237ca01f13850a4c1c40f3",
+      "peak_dbfs": -2.8004821033474956,
+      "rms_dbfs": -18.000277674596532,
+      "first": 0,
+      "last": 0
+    },
+    {
+      "id": "sfx.cup_up",
+      "file": "cup_up.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "format": "PCM16",
+      "seconds": 0.28,
+      "loop": false,
+      "hash": "f79462c0f1161e512bffc3306355490b8cb0079236a9fab7fa6445a6d2b0e174",
+      "peak_dbfs": -4.45015023809564,
+      "rms_dbfs": -18.000271532169013,
+      "first": 0,
+      "last": 0
+    },
+    {
+      "id": "sting.exposed",
+      "file": "exposed.wav",
+      "sample_rate": 44100,
+      "channels": 1,
+      "format": "PCM16",
+      "seconds": 2,
+      "loop": false,
+      "hash": "b5a54120381cc19086b2cb01d80fbfc7118560a9741ad6a3341f9ad931a0e659",
+      "peak_dbfs": -3.4953583142762588,
+      "rms_dbfs": -18.00026971547733,
+      "first": 0,
+      "last": 0
+    },
+    {
+      "id": "music.d0_theme",
+      "file": "d0_theme.wav",
+      "sample_rate": 22050,
+      "channels": 1,
+      "format": "PCM16",
+      "seconds": 8,
+      "loop": true,
+      "hash": "22642a437708612f561f529c14d17d9ab2116518e9002fadc04aabaf0f7f4a3f",
+      "peak_dbfs": -7.002331247254695,
+      "rms_dbfs": -20.000268920164043,
+      "first": 0,
+      "last": 0
+    }
+  ]
+}

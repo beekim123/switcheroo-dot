@@ -8,21 +8,21 @@
 
 ## D0 · 地基
 
-- [ ] 目录骨架、`.gitignore`、`README.md` 补运行方式
-- [ ] `package.json` 脚本
-- [ ] 拷贝 Fusion Pixel 12px 字体和全部许可证到 `third_party/fonts/`
-- [ ] `resources/art/palette.json`（47 色）+ 换色表 `dream` / `dark_slot` / `ghost`
-- [ ] `resources/art/lib/png.mjs`、`pixel.mjs`
-- [ ] `tools/resources/art.mjs`：build / verify / sheet
-- [ ] 素材：`char.cupper` 待机（字符画）、`stage.frame`（程序）
-- [ ] `resources/audio/synth.ts`（含锣、钹、板的音色）+ `audio-pack.ts` + `audio:check`
-- [ ] 音效 `sfx.cup_down`、`sfx.cup_up`、一声锣；8 秒测试旋律
-- [ ] `content/registry.json`、最小 `duels.json`、`tools/qa/content-check`
-- [ ] `tools/resources/sync-godot.mjs`（含 `--verify`）
-- [ ] Godot 工程设置、AssetCatalog、AudioService、SaveService 空壳
-- [ ] 标题画面
-- [ ] 无界面测试框架 + `tools/godot/cli.mjs`
-- [ ] D0 验收
+- [x] 目录骨架、`.gitignore`、`README.md` 补运行方式
+- [x] `package.json` 脚本
+- [x] 拷贝 Fusion Pixel 12px 字体和全部许可证到 `third_party/fonts/`
+- [x] `resources/art/palette.json`（47 色）+ 换色表 `dream` / `dark_slot` / `ghost`
+- [x] `resources/art/lib/png.mjs`、`pixel.mjs`
+- [x] `tools/resources/art.mjs`：build / verify / sheet
+- [x] 素材：`char.cupper` 待机（字符画）、`stage.frame`（程序）
+- [x] `resources/audio/synth.ts`（含锣、钹、板的音色）+ `audio-pack.ts` + `audio:check`
+- [x] 音效 `sfx.cup_down`、`sfx.cup_up`、一声锣；8 秒测试旋律
+- [x] `content/registry.json`、最小 `duels.json`、`tools/qa/content-check`
+- [x] `tools/resources/sync-godot.mjs`（含 `--verify`）
+- [x] Godot 工程设置、AssetCatalog、AudioService、SaveService 空壳
+- [x] 标题画面
+- [x] 无界面测试框架 + `tools/godot/cli.mjs`
+- [x] D0 最终审阅验收（主审已接受地基；自动检查与最终 3× 展示图通过；可听音频设备验证仍待实际设备，不扩称 D1 完整玩法）
 
 ## D1 · 规则可玩
 

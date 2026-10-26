@@ -1,0 +1,4 @@
+import fs from 'node:fs';import path from 'node:path';import {at} from '../lib/paths.mjs';
+const excluded=new Set(['.git','.godot','.cache','.local','node_modules','build','Godot.app']);let count=0;
+function walk(root){for(const entry of fs.readdirSync(root,{withFileTypes:true})){if(excluded.has(entry.name))continue;const p=path.join(root,entry.name);if(entry.isSymbolicLink())throw Error('Symlink not allowed in deliverables: '+path.relative(at(),p));if(entry.isDirectory())walk(p);else{count++;if(fs.statSync(p).size>=2_000_000)throw Error('File exceeds 2 MB: '+path.relative(at(),p));if(/\.(mjs|ts|gd|json|md|godot|tscn)$/.test(p)){const s=fs.readFileSync(p,'utf8');if(s.includes('/workspace/'+'scratch/')||s.includes('/home/'+'agent/')||/libfile_[a-f0-9]{20,}/.test(s))throw Error('Private path or transfer identity in deliverable: '+path.relative(at(),p));}}}}
+walk(at());console.log(`repo:check: ${count} files within size/path/privacy limits`);

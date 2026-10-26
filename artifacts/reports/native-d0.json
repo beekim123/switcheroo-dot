@@ -1,0 +1,35 @@
+{
+  "format": "native-capture/1",
+  "stage": "D0",
+  "native_viewport": [
+    640,
+    360
+  ],
+  "presentation": [
+    1920,
+    1080
+  ],
+  "presentation_transform": "exact 3x nearest-neighbor enlargement of native rendered viewport; not a physical 1920x1080 desktop capture",
+  "audio_driver": "Dummy",
+  "audible_listening_verified": false,
+  "native_interactions": [
+    "cup button",
+    "gong button",
+    "repeated clicks",
+    "immediate close"
+  ],
+  "shutdown_runtime_errors": 0,
+  "known_environment_warning": "llvmpipe graphics driver cannot change VSync mode",
+  "files": [
+    {
+      "path": "artifacts/screenshots/d0-title-1x.png",
+      "size_bytes": 14747,
+      "sha256": "122692b6613da88b6677627a7a04d18d365adb1baf38769b1ab28c797af6ee66"
+    },
+    {
+      "path": "artifacts/screenshots/d0-title-3x.png",
+      "size_bytes": 30208,
+      "sha256": "3705af4a225aab8a7850bb54dd83093eb27b70a2f97a49a7a133f346e3f0eb5f"
+    }
+  ]
+}

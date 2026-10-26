@@ -1,0 +1,7 @@
+{
+  "format": "content/1",
+  "files": [
+    "data/duels.json",
+    "story/title.json"
+  ]
+}

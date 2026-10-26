@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {renderCue,wav,metrics} from '../resources/audio/synth.ts';import {cues} from '../resources/audio/cues/d0.ts';
+for(const c of cues)test(`audio deterministic and bounded: ${c.id}`,()=>{const a=renderCue(c),b=renderCue(c);assert.deepEqual(a,b);const m=metrics(a);assert.ok(m.peak_dbfs<=-1);assert.ok(Math.abs(m.rms_dbfs-(c.music?-20:-18))<=(c.music?2:3));assert.equal(a[0],0);assert.equal(a.at(-1),0);assert.ok(wav(a,c.rate).length<2e6);});
+test('theme swaps pairs in its second phrase',()=>{const n=cues.find(c=>c.music).notes;assert.deepEqual(n.slice(4),[n[1],n[0],n[3],n[2]]);});
