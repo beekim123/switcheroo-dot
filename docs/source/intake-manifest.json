@@ -1,0 +1,119 @@
+{
+  "format": "source-intake/1",
+  "date": "2026-10-26",
+  "archive": {
+    "path": "docs/source/switcheroo.zip",
+    "size_bytes": 69192,
+    "sha256": "cee12a42bae30d8ac73eedd0e54215e2b00ed5f43f52949a79aa9db1596f8093"
+  },
+  "imported_document_count": 20,
+  "validation": {
+    "utf8": true,
+    "traversal_rejected": true,
+    "symlinks_rejected": true,
+    "size_limits_checked": true,
+    "finder_metadata_skipped": true
+  },
+  "original_documents": [
+    {
+      "path": "README.md",
+      "size_bytes": 1556,
+      "sha256": "5dcddc751d1f03e0c8e184439f1fadad8bb453df8960dca996043479d2cec5c1"
+    },
+    {
+      "path": "AGENTS.md",
+      "size_bytes": 5422,
+      "sha256": "cdb7b58e5135a2ef4eb71990ea8294aa39b8766b62aadc2cb0024ab7efaf7c80"
+    },
+    {
+      "path": "docs/README.md",
+      "size_bytes": 3995,
+      "sha256": "8a1e74736554325147463fdde37ddb7284a87a0f48e90c801ab31c17a5a5f8e0"
+    },
+    {
+      "path": "docs/00-vision.md",
+      "size_bytes": 6900,
+      "sha256": "7c73fcecd77ba345c175071e29fbfa4905f85bf843cfead23e33d9b288e3cbf8"
+    },
+    {
+      "path": "docs/design/02-rules.md",
+      "size_bytes": 10765,
+      "sha256": "0cebfd0043f1c9760c6a18e9c019d6485c3bce96d0a6faa5e2c1652ed3f3536b"
+    },
+    {
+      "path": "docs/design/04-storytelling.md",
+      "size_bytes": 12683,
+      "sha256": "a76eb1bdde0f9ca3d5c9190f1813e5c78322bd71aaa6dc1a4e0d55c410fe9c7f"
+    },
+    {
+      "path": "docs/design/05-ui-flow.md",
+      "size_bytes": 7789,
+      "sha256": "102283140b243209ff1b3990897621875c967c998a50d6c5a33ca834b65c6b65"
+    },
+    {
+      "path": "docs/design/01-world-story.md",
+      "size_bytes": 8567,
+      "sha256": "71800ce047d86156f0bedc370df5bd22e91a9c6f14b7ae0de6dfaeec6daed7d7"
+    },
+    {
+      "path": "docs/design/03-content.md",
+      "size_bytes": 12207,
+      "sha256": "d430aa622d463f7f0a78a25f42d5f8380c87f6bfb98ee041843e975a2f6c8f48"
+    },
+    {
+      "path": "docs/art/art-pipeline.md",
+      "size_bytes": 6136,
+      "sha256": "8f67debff29e02ad4b75e836b11b621ed5ea655767d0329862ac4dcb59bf6be1"
+    },
+    {
+      "path": "docs/art/art-direction.md",
+      "size_bytes": 7519,
+      "sha256": "4e87ad7f8f7d8814535b3a201426ab35ab22d1e2c297ed5c230030653bf679b7"
+    },
+    {
+      "path": "docs/plan/playtest.md",
+      "size_bytes": 3642,
+      "sha256": "c88c088d164d3d333af92afd4b8a0157896fa84bf7acf883683f94c47b88e1f1"
+    },
+    {
+      "path": "docs/plan/progress.md",
+      "size_bytes": 324,
+      "sha256": "8ade5edde6f96f404f50c372bb68c97348f046c6f904a3e0d2a4c615d5a0bbbd"
+    },
+    {
+      "path": "docs/plan/roadmap.md",
+      "size_bytes": 3516,
+      "sha256": "0d14898a969d9d1e806287d6f5cf72f5a8f47bec4a23f92324dbefff1ca7b66d"
+    },
+    {
+      "path": "docs/plan/questions.md",
+      "size_bytes": 904,
+      "sha256": "952680c638ef206451fbea70f5df42b0bd2efe295b8b68e7ed35399f040c55e6"
+    },
+    {
+      "path": "docs/plan/backlog.md",
+      "size_bytes": 3587,
+      "sha256": "5f9fb1ecd0cdaf29b0154579c3b2126735f0e39cb00f8e4f8cd13bb4b36049c4"
+    },
+    {
+      "path": "docs/audio/audio-direction.md",
+      "size_bytes": 6078,
+      "sha256": "d4425a697d56b1b06c74752ae7bdd0174036a876b3d9180896fc71505649d48d"
+    },
+    {
+      "path": "docs/prompts/gpt-kickoff.md",
+      "size_bytes": 5185,
+      "sha256": "041cd15397ed0ecb217da395e7a57dff7e9bcb2124f14a92e42ed6b872fa16c7"
+    },
+    {
+      "path": "docs/tech/architecture.md",
+      "size_bytes": 8993,
+      "sha256": "4613d405b45878133eae9d7f68ccf0f11eac440a67bab4ac36b224cde3747bcc"
+    },
+    {
+      "path": "docs/tech/repository-layout.md",
+      "size_bytes": 7436,
+      "sha256": "23ef87e1117a4c79afef507dc012258bb50fa41f8b14cc9404e534b1ccd11351"
+    }
+  ]
+}
