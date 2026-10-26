@@ -1,0 +1,257 @@
+{
+  "format": "roads/1",
+  "roads": [
+    {
+      "id": "road.market",
+      "name": "苹果滚滚",
+      "act": 2,
+      "slots": 5,
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        null,
+        {
+          "id": "foe.rolling_apple_a",
+          "name": "滚苹果甲",
+          "kind": "foe",
+          "hp": 4,
+          "max_hp": 4,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "roll",
+              "amount": 3,
+              "target": "player"
+            },
+            {
+              "kind": "guard",
+              "amount": 2,
+              "target": "self"
+            }
+          ],
+          "archetype": "foe.rolling_apple"
+        },
+        {
+          "id": "foe.moondust_a",
+          "name": "月屑",
+          "kind": "foe",
+          "hp": 5,
+          "max_hp": 5,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "hit",
+              "amount": 3,
+              "target": "player"
+            },
+            {
+              "kind": "move",
+              "target": "adjacent_empty",
+              "fallback": {
+                "kind": "hit",
+                "amount": 3,
+                "target": "player"
+              }
+            }
+          ],
+          "archetype": "foe.moondust"
+        },
+        {
+          "id": "foe.rolling_apple_b",
+          "name": "滚苹果乙",
+          "kind": "foe",
+          "hp": 4,
+          "max_hp": 4,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "roll",
+              "amount": 3,
+              "target": "player"
+            },
+            {
+              "kind": "guard",
+              "amount": 2,
+              "target": "self"
+            }
+          ],
+          "archetype": "foe.rolling_apple"
+        }
+      ],
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "rule": "none",
+      "intent_cycle": [],
+      "art_ids": [
+        "stage.frame",
+        "char.cupper"
+      ],
+      "audio_ids": [
+        "sfx.cup_down",
+        "sfx.cup_up",
+        "sting.exposed"
+      ],
+      "reward_insight": 1
+    },
+    {
+      "id": "road.ferry",
+      "name": "水灯拦路",
+      "act": 3,
+      "slots": 5,
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.empty_lamp",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "foe.water_lantern_a",
+          "name": "水灯鬼甲",
+          "kind": "foe",
+          "hp": 4,
+          "max_hp": 4,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "hit",
+              "amount": 3,
+              "target": "player"
+            }
+          ],
+          "explode": 2,
+          "archetype": "foe.water_lantern"
+        },
+        null,
+        {
+          "id": "foe.water_lantern_b",
+          "name": "水灯鬼乙",
+          "kind": "foe",
+          "hp": 4,
+          "max_hp": 4,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "hit",
+              "amount": 3,
+              "target": "player"
+            }
+          ],
+          "explode": 2,
+          "archetype": "foe.water_lantern"
+        },
+        {
+          "id": "prop.crate",
+          "name": "木箱",
+          "kind": "prop",
+          "hp": 6,
+          "max_hp": 6,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        }
+      ],
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "rule": "none",
+      "intent_cycle": [],
+      "art_ids": [
+        "stage.frame",
+        "char.cupper"
+      ],
+      "audio_ids": [
+        "sfx.cup_down",
+        "sfx.cup_up",
+        "sting.exposed"
+      ],
+      "reward_insight": 1
+    }
+  ]
+}

@@ -2,19 +2,69 @@
   "format": "resource-pack/1",
   "files": [
     {
+      "id": "content.data/acts.json",
+      "path": "data/data/acts.json",
+      "hash": "b14363afa60db1d5df690d2b61864ad903915ecf4be3741edf6ef5c3b20a22e1"
+    },
+    {
       "id": "content.data/duels.json",
       "path": "data/data/duels.json",
-      "hash": "95b3c954a9904739b1913ddc911f84a0480130471f51e7e85d8afbaa1d5889b0"
+      "hash": "89a5e27b384edd3bbe951926b0f006b6a8b596dfda731b965ee5d9820fca4d9e"
+    },
+    {
+      "id": "content.data/foes.json",
+      "path": "data/data/foes.json",
+      "hash": "36659c963b2b78f8907bdf033cd44682d611010266300bfc583be1cfe2686031"
+    },
+    {
+      "id": "content.data/investigations.json",
+      "path": "data/data/investigations.json",
+      "hash": "4f230a80ca47fb279bb079e51a800424d17b4dad51c4a43066b75beeff63e134"
+    },
+    {
+      "id": "content.data/items.json",
+      "path": "data/data/items.json",
+      "hash": "74c4e27f077bf044e2e51529a16afa3f00b30b949129165b0fa3bebf0086d328"
+    },
+    {
+      "id": "content.data/marks.json",
+      "path": "data/data/marks.json",
+      "hash": "74a71f7754bf51fbd3cae6af830ecde4a862eb5f8ea93d2ededc24f6178de0d0"
+    },
+    {
+      "id": "content.data/props.json",
+      "path": "data/data/props.json",
+      "hash": "12ededa172b55375d55dc8d45f767e0e6d7aa83514b9be54a3c0256c77a571a9"
+    },
+    {
+      "id": "content.data/rehearsals.json",
+      "path": "data/data/rehearsals.json",
+      "hash": "5cd4aab3ed87542f80cc8bdc8a74227d752624adab188831fa6afb595b46dc2e"
+    },
+    {
+      "id": "content.data/roads.json",
+      "path": "data/data/roads.json",
+      "hash": "0a3d54d153000a771aeab83cb7fc7b8b40789d77280f0cd95f3e3a7add5031a9"
+    },
+    {
+      "id": "content.data/upgrades.json",
+      "path": "data/data/upgrades.json",
+      "hash": "6cfb24c1d7660840e0c8a253b1fefaa39b171f6ee6b8035952e8b44bad081dac"
     },
     {
       "id": "content.registry",
       "path": "data/registry.json",
-      "hash": "e18d1392c69ccfecddf49224ffd60ee6458e4e5833e7e0a6bd284361620b3fa3"
+      "hash": "76e6bd0cc11bc8c9fdaf97b08898748e06331ec76cf43846f7646c3d584f8289"
+    },
+    {
+      "id": "content.story/banter.json",
+      "path": "data/story/banter.json",
+      "hash": "1386d3417d539c9063cd6f279d39571e364bfb2ddb599488b6b5407674370476"
     },
     {
       "id": "content.story/title.json",
       "path": "data/story/title.json",
-      "hash": "1b033dc0180eed289033be95b7385ea3e457cb88f6957640dcc1886d23ef7e2e"
+      "hash": "bd7ca380f11093e05f22ad1caebb902c6e39b052668fcb9716b61829e5577c41"
     },
     {
       "id": "char.cupper",
@@ -79,7 +129,7 @@
     {
       "id": "font.fusion-pixel-12px/provenance.json",
       "path": "resources/fonts/fusion-pixel-12px/provenance.json",
-      "hash": "f706f72f3679c5eaec9b84d31509507986aafac1528e60b1d6626f0593214ac8"
+      "hash": "e1ece6fe42ffb20238e953be4c9b8475232bc98726ed32727db54fd96ece7884"
     },
     {
       "id": "font.fusion-pixel-12px/README.md",
@@ -89,7 +139,7 @@
     {
       "id": "font.fusion-pixel-12px/switcheroo-pixel-12.ttf",
       "path": "resources/fonts/fusion-pixel-12px/switcheroo-pixel-12.ttf",
-      "hash": "67b5d6bc94268f0d01c0756253cfb6e2ff31ad54fc856fae4fc974af9eb6684e"
+      "hash": "462ebad5509231f5ed694ccccda92fc24b562e6d14eae32f15fee1bcda66eabd"
     }
   ]
 }

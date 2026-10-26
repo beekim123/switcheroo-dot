@@ -4,9 +4,9 @@
   "upstream_filename": "fusion-pixel-12px-monospaced-zh_hans.ttf",
   "upstream_sha256": "4f88a73ed18ba0ee0498df001b01665f38f6057ede048041d089f13a5fb751c5",
   "modification": "Subset to project text plus ASCII; renamed Switcheroo Pixel 12; glyph outlines unchanged",
-  "glyph_codepoints": 1356,
+  "glyph_codepoints": 1395,
   "file": "switcheroo-pixel-12.ttf",
-  "size_bytes": 239392,
-  "sha256": "67b5d6bc94268f0d01c0756253cfb6e2ff31ad54fc856fae4fc974af9eb6684e",
+  "size_bytes": 246360,
+  "sha256": "462ebad5509231f5ed694ccccda92fc24b562e6d14eae32f15fee1bcda66eabd",
   "license": "OFL-1.1; all bundled notices preserved"
 }

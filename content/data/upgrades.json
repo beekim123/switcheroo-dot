@@ -1,0 +1,41 @@
+{
+  "format": "upgrades/1",
+  "upgrades": [
+    {
+      "id": "up.reach",
+      "name": "手长",
+      "description": "换位距离由二格变成三格。",
+      "cost": 2,
+      "limit": 1,
+      "effect": "reach",
+      "amount": 1
+    },
+    {
+      "id": "up.foresight",
+      "name": "远望",
+      "description": "多看一回合意图。",
+      "cost": 2,
+      "limit": 1,
+      "effect": "foresight",
+      "amount": 1
+    },
+    {
+      "id": "up.sturdy",
+      "name": "结实",
+      "description": "最大生命增加四点。",
+      "cost": 1,
+      "limit": 2,
+      "effect": "max_hp",
+      "amount": 4
+    },
+    {
+      "id": "up.marble",
+      "name": "多带一颗",
+      "description": "每场多一颗弹珠。",
+      "cost": 1,
+      "limit": 1,
+      "effect": "marble",
+      "amount": 1
+    }
+  ]
+}

@@ -1,21 +1,140 @@
 {
   "format": "duels/1",
-  "scope": "D0 fixture; full authored duels arrive in D1",
   "duels": [
     {
-      "id": "duel.d0_fixture",
+      "id": "duel.prologue",
+      "name": "失控的杯戏师",
+      "act": 1,
       "slots": 5,
       "layout": [
-        "char.aming",
-        "foe.moondust",
-        null,
-        null,
-        null
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "foe.moondust_a",
+          "name": "月屑甲",
+          "kind": "foe",
+          "hp": 5,
+          "max_hp": 5,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "hit",
+              "amount": 3,
+              "target": "player"
+            },
+            {
+              "kind": "move",
+              "target": "adjacent_empty",
+              "fallback": {
+                "kind": "hit",
+                "amount": 3,
+                "target": "player"
+              }
+            }
+          ],
+          "archetype": "foe.moondust"
+        },
+        {
+          "id": "prop.crate",
+          "name": "木箱",
+          "kind": "prop",
+          "hp": 6,
+          "max_hp": 6,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.statue",
+          "name": "石像",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": true,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "foe.moondust_b",
+          "name": "月屑乙",
+          "kind": "foe",
+          "hp": 5,
+          "max_hp": 5,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "hit",
+              "amount": 3,
+              "target": "player"
+            },
+            {
+              "kind": "move",
+              "target": "adjacent_empty",
+              "fallback": {
+                "kind": "hit",
+                "amount": 3,
+                "target": "player"
+              }
+            }
+          ],
+          "archetype": "foe.moondust"
+        }
       ],
-      "player_hp": 20,
-      "enemy_hp": 5,
-      "attack_damage": 3,
-      "target_slot": 0,
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "rule": "prologue",
+      "intent_cycle": [],
       "art_ids": [
         "stage.frame",
         "char.cupper"
@@ -24,7 +143,386 @@
         "sfx.cup_down",
         "sfx.cup_up",
         "sting.exposed"
-      ]
+      ],
+      "tutorial": {
+        "turn_1": "月屑就在旁边。点「出手」，再点它。",
+        "turn_1_end": "换了位置，挨打的就换了人！",
+        "turn_2": "伸手！接住杯子！把月屑换到槽三。",
+        "turn_3": "谁站在靶标上，谁就挨打。试试预览！"
+      }
+    },
+    {
+      "id": "duel.thief",
+      "name": "学徒小偷阿扒",
+      "act": 2,
+      "slots": 5,
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.apple_basket",
+          "name": "苹果筐",
+          "kind": "prop",
+          "hp": 6,
+          "max_hp": 6,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "prop.stall",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "rival.thief",
+          "name": "阿扒",
+          "kind": "rival",
+          "hp": 16,
+          "max_hp": 16,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [
+            {
+              "kind": "touch",
+              "target": "adjacent_unmarked_prop",
+              "fallback": {
+                "kind": "hit",
+                "amount": 4,
+                "target": "player"
+              }
+            },
+            {
+              "kind": "hit",
+              "amount": 4,
+              "target": "player"
+            },
+            {
+              "kind": "move",
+              "target": "farthest_not_heavy"
+            },
+            {
+              "kind": "hit",
+              "amount": 4,
+              "target": "player"
+            }
+          ]
+        },
+        {
+          "id": "prop.wok",
+          "name": "铁锅",
+          "kind": "prop",
+          "hp": 6,
+          "max_hp": 6,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "owner.noodle_shop",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.stall",
+          "name": "婆婆的摊位",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": true,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        }
+      ],
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "rule": "thief",
+      "intent_cycle": [
+        {
+          "kind": "touch",
+          "target": "adjacent_unmarked_prop",
+          "fallback": {
+            "kind": "hit",
+            "amount": 4,
+            "target": "player"
+          }
+        },
+        {
+          "kind": "hit",
+          "amount": 4,
+          "target": "player"
+        },
+        {
+          "kind": "move",
+          "target": "farthest_not_heavy"
+        },
+        {
+          "kind": "hit",
+          "amount": 4,
+          "target": "player"
+        }
+      ],
+      "art_ids": [
+        "stage.frame",
+        "char.cupper"
+      ],
+      "audio_ids": [
+        "sfx.cup_down",
+        "sfx.cup_up",
+        "sting.exposed"
+      ],
+      "rival": "rival.thief",
+      "investigation": "inv.market",
+      "reward_mark": "mark.missing",
+      "signboard": {
+        "text": "被他{touch}过的东西会忘记{owner}，替他{block}。",
+        "blanks": {
+          "touch": {
+            "word": "摸",
+            "stage": "first_touch",
+            "clue": "clue.market.cloth"
+          },
+          "owner": {
+            "word": "主人",
+            "stage": "granny_shout_t2",
+            "clue": "clue.market.granny"
+          },
+          "block": {
+            "word": "挡打",
+            "stage": "first_block",
+            "clue": null
+          }
+        }
+      },
+      "reversal": {
+        "id": "reversal.return_owner",
+        "name": "物归原主",
+        "damage": 6,
+        "stun": 1,
+        "description": "苹果筐回到婆婆身边，清除手印，阿扒受到六点伤害并晕一回合。"
+      }
+    },
+    {
+      "id": "duel.ferryman",
+      "name": "渡夫老乔",
+      "act": 3,
+      "slots": 5,
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.empty_lamp",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.lamp_a",
+          "name": "灯柱甲",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": true,
+          "stealth": false,
+          "cycle": [],
+          "archetype": "prop.lamp_post"
+        },
+        {
+          "id": "prop.ferry",
+          "name": "渡船",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.lamp_b",
+          "name": "灯柱乙",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": [],
+          "archetype": "prop.lamp_post"
+        },
+        {
+          "id": "rival.ferryman",
+          "name": "老乔",
+          "kind": "rival",
+          "hp": 24,
+          "max_hp": 24,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.borrowed_lantern",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": true,
+          "cycle": [
+            {
+              "kind": "extinguish",
+              "target": "nearest_lit_lamp",
+              "fallback": {
+                "kind": "pole",
+                "amount": 5,
+                "target": "player"
+              }
+            },
+            {
+              "kind": "pole",
+              "amount": 5,
+              "target": "player"
+            },
+            {
+              "kind": "move",
+              "target": "farthest_dark"
+            }
+          ]
+        }
+      ],
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "rule": "ferryman",
+      "intent_cycle": [
+        {
+          "kind": "extinguish",
+          "target": "nearest_lit_lamp",
+          "fallback": {
+            "kind": "pole",
+            "amount": 5,
+            "target": "player"
+          }
+        },
+        {
+          "kind": "pole",
+          "amount": 5,
+          "target": "player"
+        },
+        {
+          "kind": "move",
+          "target": "farthest_dark"
+        }
+      ],
+      "art_ids": [
+        "stage.frame",
+        "char.cupper"
+      ],
+      "audio_ids": [
+        "sfx.cup_down",
+        "sfx.cup_up",
+        "sting.exposed"
+      ],
+      "rival": "rival.ferryman",
+      "investigation": "inv.ferry",
+      "reward_mark": "mark.glow",
+      "signboard": {
+        "text": "借走你{lamp}里的{light}，你就{hidden}他。",
+        "blanks": {
+          "lamp": {
+            "word": "灯",
+            "stage": "first_extinguish",
+            "clue": null
+          },
+          "light": {
+            "word": "光",
+            "stage": "first_pole",
+            "clue": "clue.ferry.fish"
+          },
+          "hidden": {
+            "word": "看不见",
+            "stage": "first_hidden",
+            "clue": "clue.ferry.scholar"
+          }
+        }
+      },
+      "reversal": {
+        "id": "reversal.return_light",
+        "name": "光，还回去",
+        "damage": 6,
+        "stun": 1,
+        "reveal_turns": 2,
+        "description": "换回借光灯笼，所有灯柱重亮，老乔受六点伤害并晕一回合，不再隐身。"
+      }
     }
   ]
 }

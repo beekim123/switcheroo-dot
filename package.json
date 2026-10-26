@@ -1,6 +1,6 @@
 {
   "name": "switcheroo-dot",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -17,7 +17,7 @@
     "sync:verify": "node tools/resources/sync-godot.mjs --verify",
     "dev": "node tools/godot/cli.mjs dev",
     "godot:import": "node tools/godot/cli.mjs import",
-    "godot:test": "node tools/godot/cli.mjs test && node tools/godot/cli.mjs smoke",
+    "godot:test": "node tools/godot/cli.mjs test && node tools/godot/cli.mjs smoke && node tools/godot/cli.mjs content-test && node tools/godot/cli.mjs integration",
     "sim": "node tools/godot/cli.mjs sim",
     "shots": "node tools/godot/cli.mjs shots",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",

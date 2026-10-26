@@ -1,0 +1,177 @@
+{
+  "format": "investigations/1",
+  "investigations": [
+    {
+      "id": "inv.windmill",
+      "act": 1,
+      "name": "风车坡广场",
+      "hotspots": [
+        {
+          "id": "windmill.statue",
+          "name": "石像底座",
+          "lines": [
+            "苔藓底下刻着两道月牙。和镇上的风车纹样不一样。"
+          ],
+          "clue": null,
+          "motive": "线索：石像来自北方遗迹。"
+        },
+        {
+          "id": "windmill.kite",
+          "name": "麦朵的风筝",
+          "lines": [
+            "风筝还挂在风车上。阿鸣把断线一圈一圈收进挎包。"
+          ],
+          "clue": null,
+          "motive": "麦朵的风筝收好了。"
+        },
+        {
+          "id": "windmill.mayor",
+          "name": "镇长",
+          "lines": [
+            "换月夜的事，去问葛伦。",
+            "那老头修得好风车，兴许也修得好麻烦。"
+          ],
+          "clue": null,
+          "motive": null
+        },
+        {
+          "id": "windmill.dust",
+          "name": "月屑亮粉",
+          "lines": [
+            "亮粉沾在指尖，像一粒不肯熄灭的小星星。"
+          ],
+          "clue": null,
+          "motive": null
+        }
+      ]
+    },
+    {
+      "id": "inv.market",
+      "act": 2,
+      "name": "苹果集市",
+      "hotspots": [
+        {
+          "id": "market.cloth",
+          "name": "布店老板",
+          "lines": [
+            "他就摸了一下我的招牌。",
+            "招牌竟自己跟着他跑了！"
+          ],
+          "clue": "clue.market.cloth",
+          "motive": null
+        },
+        {
+          "id": "market.granny",
+          "name": "摊主婆婆",
+          "lines": [
+            "那筐子跟了我四十年。",
+            "昨天见了我还愣了一下，像是想起了什么。"
+          ],
+          "clue": "clue.market.granny",
+          "motive": null
+        },
+        {
+          "id": "market.guard",
+          "name": "巡街卫兵",
+          "lines": [
+            "那孩子没爹没妈，住在桥洞底下。",
+            "我一走近，他就把包袱搂得紧紧的。"
+          ],
+          "clue": null,
+          "motive": "阿扒住在桥洞，怕别人拿走包袱。"
+        },
+        {
+          "id": "market.bundle",
+          "name": "墙角包袱",
+          "lines": [
+            "里面全是别人的东西，每一件都擦得干干净净。"
+          ],
+          "clue": null,
+          "motive": "阿扒把借来的陪伴擦得很亮。"
+        },
+        {
+          "id": "market.thread",
+          "name": "地上线头",
+          "lines": [
+            "细线绕成一只小手，轻轻碰一下就松开了。"
+          ],
+          "clue": null,
+          "motive": null
+        }
+      ]
+    },
+    {
+      "id": "inv.ferry",
+      "act": 3,
+      "name": "灯笼渡",
+      "hotspots": [
+        {
+          "id": "ferry.fish",
+          "name": "卖鱼大婶",
+          "lines": [
+            "我家的灯一到晚上就灭。",
+            "灯油还是满的。不是油没了，是光没了。"
+          ],
+          "clue": "clue.ferry.fish",
+          "motive": null
+        },
+        {
+          "id": "ferry.scholar",
+          "name": "赶考书生",
+          "lines": [
+            "灯一灭，就看不见撑船的人。",
+            "船却照样走，我的行李都吓出汗了。"
+          ],
+          "clue": "clue.ferry.scholar",
+          "motive": null
+        },
+        {
+          "id": "ferry.drawing",
+          "name": "墙上的画",
+          "lines": [
+            "画上是一条挂满灯的渡船，每一盏旁边都画着笑脸。"
+          ],
+          "clue": null,
+          "motive": "小灯想坐一条亮堂堂的船。"
+        },
+        {
+          "id": "ferry.child",
+          "name": "小灯",
+          "lines": [
+            "爹说，等灯够多了，我就不怕了。",
+            "其实他在船上，我就没有那么怕。"
+          ],
+          "clue": null,
+          "motive": "小灯怕黑，更需要父亲陪在身边。"
+        },
+        {
+          "id": "ferry.lamp",
+          "name": "渡口灯柱",
+          "lines": [
+            "灯罩上留着一个被手指抹过的小口，灯油一滴没少。"
+          ],
+          "clue": null,
+          "motive": null
+        }
+      ]
+    }
+  ],
+  "clues": [
+    {
+      "id": "clue.market.cloth",
+      "word": "摸"
+    },
+    {
+      "id": "clue.market.granny",
+      "word": "主人"
+    },
+    {
+      "id": "clue.ferry.fish",
+      "word": "光"
+    },
+    {
+      "id": "clue.ferry.scholar",
+      "word": "看不见"
+    }
+  ]
+}

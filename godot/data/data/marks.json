@@ -1,0 +1,18 @@
+{
+  "format": "marks/1",
+  "marks": [
+    {
+      "id": "mark.missing",
+      "name": "惦记",
+      "description": "换到你身边的物件，替你挡一次打。",
+      "source": "duel.thief"
+    },
+    {
+      "id": "mark.glow",
+      "name": "微光",
+      "description": "交换过的两样东西发光到你的下回合。",
+      "source": "duel.ferryman"
+    }
+  ],
+  "capacity": 1
+}

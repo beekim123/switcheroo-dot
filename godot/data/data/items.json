@@ -1,0 +1,48 @@
+{
+  "format": "items/1",
+  "items": [
+    {
+      "id": "item.candied_haw",
+      "name": "糖葫芦",
+      "kind": "heal",
+      "amount": 6,
+      "count": 1,
+      "description": "回复六点生命；每场一串。"
+    },
+    {
+      "id": "item.marble",
+      "name": "弹珠",
+      "kind": "damage",
+      "amount": 2,
+      "count": 2,
+      "description": "对任意看得见的目标造成两点伤害。"
+    }
+  ],
+  "held_items": [
+    {
+      "id": "held.stone",
+      "name": "石子",
+      "lit": false
+    },
+    {
+      "id": "held.empty_lamp",
+      "name": "空灯",
+      "lit": false
+    },
+    {
+      "id": "held.borrowed_lantern",
+      "name": "借光灯笼",
+      "lit": true
+    },
+    {
+      "id": "held.key",
+      "name": "钥匙",
+      "lit": false
+    },
+    {
+      "id": "held.bright_lantern",
+      "name": "亮灯",
+      "lit": true
+    }
+  ]
+}

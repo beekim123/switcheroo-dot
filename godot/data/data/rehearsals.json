@@ -1,0 +1,536 @@
+{
+  "format": "rehearsals/1",
+  "rehearsals": [
+    {
+      "id": "reh.rain",
+      "name": "接雨",
+      "act": 1,
+      "slots": 5,
+      "goal": "面粉袋不能淋湿。",
+      "goal_kind": "rain",
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.bucket",
+          "name": "水桶",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.flour",
+          "name": "面粉袋",
+          "kind": "prop",
+          "hp": 1,
+          "max_hp": 1,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        null,
+        null
+      ],
+      "mode": "position",
+      "swaps": 1,
+      "main_allowed": false,
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "intents": [
+        {
+          "actor": "environment",
+          "kind": "rain",
+          "slot": 2,
+          "amount": 0
+        }
+      ],
+      "hint": "让能接雨的水桶站到槽三。"
+    },
+    {
+      "id": "reh.geese",
+      "name": "两只鹅",
+      "act": 1,
+      "slots": 5,
+      "goal": "两只鹅都挨一下，阿鸣不挨啄。",
+      "goal_kind": "geese",
+      "layout": [
+        {
+          "id": "foe.goose_a",
+          "name": "鹅甲",
+          "kind": "foe",
+          "hp": 3,
+          "max_hp": 3,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "foe.goose_b",
+          "name": "鹅乙",
+          "kind": "foe",
+          "hp": 3,
+          "max_hp": 3,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        null,
+        null
+      ],
+      "mode": "position",
+      "swaps": 1,
+      "main_allowed": false,
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "intents": [
+        {
+          "actor": "foe.goose_a",
+          "kind": "hit",
+          "slot": 1,
+          "amount": 1
+        },
+        {
+          "actor": "foe.goose_b",
+          "kind": "hit",
+          "slot": 0,
+          "amount": 1
+        }
+      ],
+      "hint": "把阿鸣和鹅乙对调。靶标不会跟着走。"
+    },
+    {
+      "id": "reh.cart",
+      "name": "拦住苹果车",
+      "act": 2,
+      "slots": 5,
+      "goal": "小孩不被苹果车撞到。",
+      "goal_kind": "cart",
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.post",
+          "name": "木桩",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.apple_cart",
+          "name": "苹果车",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "char.child",
+          "name": "小孩",
+          "kind": "prop",
+          "hp": 6,
+          "max_hp": 6,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        null
+      ],
+      "mode": "position",
+      "swaps": 1,
+      "main_allowed": false,
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "intents": [
+        {
+          "actor": "prop.apple_cart",
+          "kind": "hit",
+          "slot": 3,
+          "amount": 3
+        }
+      ],
+      "hint": "槽二到槽四，刚好能换。"
+    },
+    {
+      "id": "reh.purse",
+      "name": "钱袋回家",
+      "act": 2,
+      "slots": 5,
+      "goal": "钱袋不被抢走，还要回到失主身边。",
+      "goal_kind": "purse",
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.purse",
+          "name": "钱袋",
+          "kind": "prop",
+          "hp": 1,
+          "max_hp": 1,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "char.owner",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        null,
+        null,
+        {
+          "id": "char.owner",
+          "name": "失主",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": true,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        }
+      ],
+      "mode": "position",
+      "swaps": 1,
+      "main_allowed": false,
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "intents": [
+        {
+          "actor": "environment",
+          "kind": "steal",
+          "slot": 1,
+          "amount": 0
+        }
+      ],
+      "hint": "失主在槽五，把钱袋放到槽四。"
+    },
+    {
+      "id": "reh.key",
+      "name": "换钥匙",
+      "act": 3,
+      "slots": 5,
+      "goal": "阿鸣拿到钥匙，守卫手中仍有东西。",
+      "goal_kind": "key",
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        null,
+        {
+          "id": "char.guard",
+          "name": "守卫",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "held.key",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.door",
+          "name": "门",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": true,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        null
+      ],
+      "mode": "item",
+      "swaps": 1,
+      "main_allowed": false,
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "intents": [
+        {
+          "actor": "char.guard",
+          "kind": "check",
+          "slot": 2,
+          "amount": 0
+        }
+      ],
+      "hint": "换物不看距离：用石子换守卫的钥匙。"
+    },
+    {
+      "id": "reh.light",
+      "name": "照影子",
+      "act": 3,
+      "slots": 5,
+      "goal": "让躲在暗处的影子贼现身。",
+      "goal_kind": "light",
+      "layout": [
+        {
+          "id": "char.aming",
+          "name": "阿鸣",
+          "kind": "player",
+          "hp": 20,
+          "max_hp": 20,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "held.stone",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": false,
+          "cycle": []
+        },
+        {
+          "id": "prop.lamp_post",
+          "name": "灯柱",
+          "kind": "prop",
+          "hp": 0,
+          "max_hp": 0,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": true,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": true,
+          "stealth": false,
+          "cycle": []
+        },
+        null,
+        null,
+        {
+          "id": "foe.shadow",
+          "name": "影子贼",
+          "kind": "foe",
+          "hp": 4,
+          "max_hp": 4,
+          "guard": 0,
+          "heavy": false,
+          "unbreakable": false,
+          "item": "",
+          "owner": "",
+          "marks": [],
+          "lit": false,
+          "stealth": true,
+          "cycle": []
+        }
+      ],
+      "mode": "position",
+      "swaps": 1,
+      "main_allowed": false,
+      "player": {
+        "hp": 20,
+        "strike": 4,
+        "guard": 4,
+        "reach": 2,
+        "swaps": 1,
+        "heal": 6,
+        "marble_damage": 2,
+        "items": {
+          "item.candied_haw": 1,
+          "item.marble": 2
+        }
+      },
+      "intents": [
+        {
+          "actor": "foe.shadow",
+          "kind": "steal",
+          "slot": 0,
+          "amount": 0
+        }
+      ],
+      "hint": "把亮灯柱换到槽四，照到槽五。"
+    }
+  ]
+}

@@ -1,7 +1,17 @@
 {
   "format": "content/1",
   "files": [
+    "data/acts.json",
     "data/duels.json",
+    "data/foes.json",
+    "data/investigations.json",
+    "data/items.json",
+    "data/marks.json",
+    "data/props.json",
+    "data/rehearsals.json",
+    "data/roads.json",
+    "data/upgrades.json",
+    "story/banter.json",
     "story/title.json"
   ]
 }

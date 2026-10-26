@@ -1,0 +1,309 @@
+{
+  "format": "d1-native-acceptance/1",
+  "engine": "Godot 4.7.2.stable.official.ed1daf0bf",
+  "renderer": "Compatibility / Mesa llvmpipe",
+  "audio_driver": "Dummy",
+  "audible_listening_verified": false,
+  "platform_export_verified": false,
+  "root_accepted_d1_graybox": true,
+  "suite": {
+    "groups": 13,
+    "source": "native Godot viewport capture through GUI-launched --shots",
+    "logical_size": [
+      640,
+      360
+    ],
+    "presentation_size": [
+      1920,
+      1080
+    ],
+    "presentation_transform": "exact nearest-neighbor 3x, verified pixel-by-pixel; not a physical 1920x1080 window capture",
+    "every_group_visually_reviewed": true,
+    "process_exit": 0,
+    "warnings": [
+      "driver does not support VSync adjustment"
+    ],
+    "script_errors": 0
+  },
+  "manual": {
+    "operator": "agent-operated native mouse/keyboard QA, with prior design knowledge; not human playtest",
+    "start_utc": "2026-10-26T04:28:02Z",
+    "end_utc": "2026-10-26T04:48:12Z",
+    "wall_seconds": 1210,
+    "save_active_seconds": 1115.45632204705,
+    "timing_limit": "includes font restart, code fixes, screenshot inspection and reporting; not uninterrupted player time or proof of the 40–55 minute design goal",
+    "debug_or_bot_in_main_route": false,
+    "assistance_in_main_route": false,
+    "duel_turns": [
+      4,
+      5,
+      6
+    ],
+    "duel_final_hp": [
+      14,
+      20,
+      23
+    ],
+    "rehearsals_completed": 6,
+    "roads_completed": 2,
+    "road_turns": [
+      2,
+      2
+    ],
+    "letter_indices": [
+      1,
+      0,
+      2
+    ],
+    "finished_save": true,
+    "all_upgrades_purchased": true,
+    "both_marks_acquired": true,
+    "final_mark": "mark.glow",
+    "native_capture_size": [
+      1280,
+      720
+    ]
+  },
+  "targeted_regressions": {
+    "right_click_cancel_over_slot_button": "passed after fix",
+    "preview_pause_playbill_resume_clears_ghosts": "passed",
+    "guard_self_label_no_arrow_after_actor_swap": "passed",
+    "defeated_actor_stale_intent_removed": "passed",
+    "completed_save_resume_clean_playbill": "automated scene test passed",
+    "single_turn_rehearsal_forecast_hidden": "automated scene test passed"
+  },
+  "files": [
+    {
+      "path": "artifacts/screenshots/d1-ending-1x.png",
+      "size_bytes": 4331,
+      "sha256": "ba62a354bf84d64098c80d89bb30ecf91b672f1e574c43b40683cab294b3dd2d",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:57.835665+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-ending-3x.png",
+      "size_bytes": 14086,
+      "sha256": "1c20185d93724493a81237a0b61c61a2fb5e1bbdd6f89aa45b3687440fcc23a4",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:57.910519+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-exposed-1x.png",
+      "size_bytes": 10501,
+      "sha256": "f2c214f3c0039fcba8c9293b124f393f2e667329e43edb2987eb0edba361e12f",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:56.998467+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-exposed-3x.png",
+      "size_bytes": 21488,
+      "sha256": "b71c11dfe8d7cab67aec2cc5d5874a7ac7129d2e05e33e5841db351360b4a4d9",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:57.069790+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-ferryman-dark-1x.png",
+      "size_bytes": 10107,
+      "sha256": "1582db2df1a14d5e9018f394191e278dba4f56b24af863ce1ed873e717c8e33c",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:57.501504+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-ferryman-dark-3x.png",
+      "size_bytes": 21156,
+      "sha256": "e883004c1437e7e95d0a0c804327b1c6b5b60d844f83886c1919e75272466839",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:57.583336+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-investigation-1x.png",
+      "size_bytes": 5236,
+      "sha256": "8ebe6730f6aae4a76e95152e1f5e60fc8d860e126b6c87176e9dfbe60b0ec490",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:56.139616+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-investigation-3x.png",
+      "size_bytes": 15199,
+      "sha256": "85a8827623aa1973449db1f241c0d9e1bb0d105d5c00c23dbe2e3c4cf459be19",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:56.213377+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-letter-1x.png",
+      "size_bytes": 6287,
+      "sha256": "ee0523de9c50ec639bb091795a51f21ab6d9ca2fc72e7e594935cceac3bc1e59",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:57.619028+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-letter-3x.png",
+      "size_bytes": 16901,
+      "sha256": "90a7b222122adc46a418bee53bc4052b6a75709ff31fa3f1b27aa9321e4364b4",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:57.694593+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-manual-completed-2x.png",
+      "size_bytes": 69472,
+      "sha256": "4e898eb4f7c8b80fb7931e4c9b3c76ba4db3542d02b64337bf35bbe7b1f3b1e7",
+      "width": 1280,
+      "height": 720,
+      "capture_utc": "2026-10-26T04:48:12.955739+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-manual-ferryman-reversal-2x.png",
+      "size_bytes": 124443,
+      "sha256": "be0fdb45fa96d008d83f85f61827bf1d19bdc101f1a65826f7f2f8c088ba2579",
+      "width": 1280,
+      "height": 720,
+      "capture_utc": "2026-10-26T04:45:34.075729+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-native-guard-self-2x.png",
+      "size_bytes": 120272,
+      "sha256": "58cc2f58a02b76865b6745770574a21bbc2f78e2e63948ff8072a432caec954b",
+      "width": 1280,
+      "height": 720,
+      "capture_utc": "2026-10-26T04:51:27.736664+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-playbill-1x.png",
+      "size_bytes": 4773,
+      "sha256": "856013091bb2685e0fca0b3b4f67550374dd038aa5a758381509bbb41f9dfd26",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:55.979953+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-playbill-3x.png",
+      "size_bytes": 14691,
+      "sha256": "25406a4cb61b357406ecd722c1508845ae269e544fb36f6f4a6d39dfb8113c89",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:56.066505+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-rehearsal-1x.png",
+      "size_bytes": 9506,
+      "sha256": "e0975d80d3646c98a44b66ec4b7380090423e85f1c62a498ab490eaefd32897c",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:56.390773+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-rehearsal-3x.png",
+      "size_bytes": 20483,
+      "sha256": "7ae2af8690c5967fea25fd7900bb50d3f40452a6e2813204800248d8e66451b5",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:56.466293+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-reversal-1x.png",
+      "size_bytes": 9809,
+      "sha256": "77257c2e8d4a1897c021772e1d9a3e87c5598fd6bc5e183e8104f5a376dee4f3",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:57.308036+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-reversal-3x.png",
+      "size_bytes": 20710,
+      "sha256": "8cbd2498fe5d835818a6a43f3ea936899f13c9d481562b57639f8d853fdd8389",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:57.384836+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-reversal-preview-1x.png",
+      "size_bytes": 10616,
+      "sha256": "902296c001ecfef9230d764972f4424a5e80da4cf0cf7f9fcd4e33845d0cfac7",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:57.126143+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-reversal-preview-3x.png",
+      "size_bytes": 21616,
+      "sha256": "efecafe378b5c515ee6a51e344ff969bdd23f57e9d26807519813e862e2ab3d3",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:57.205860+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-shop-1x.png",
+      "size_bytes": 7219,
+      "sha256": "4bcb8fd88f87f30064b8c817a352abc34d3a15657f5f1ec6f08a1acacb9d4c3f",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:57.735808+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-shop-3x.png",
+      "size_bytes": 17826,
+      "sha256": "e860034e8eaf15e6273339f772014668a2e11068ded1fc89b2c3c3445a29c05f",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:57.808505+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-swap-preview-1x.png",
+      "size_bytes": 10498,
+      "sha256": "021fd2fc6a58c4acaa4b8c68cc8d2824f1de9c587f8f9f4fb7963e3b79346eba",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:56.736858+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-swap-preview-3x.png",
+      "size_bytes": 21416,
+      "sha256": "a0e2da2eef77deb9ef8d97761cc498efdda3b47560f792d895df27c0575216c7",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:56.814407+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-thief-1x.png",
+      "size_bytes": 10089,
+      "sha256": "e8fff5415a943906020fb27942362f7e593f10f34a85209e946379ac9ac114a1",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:56.576861+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-thief-3x.png",
+      "size_bytes": 20976,
+      "sha256": "55152733dadf20fbcf0bdbd8fd0dfa3d4b419fb706476efb3d3f985c1bacb0b0",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:56.671878+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-title-1x.png",
+      "size_bytes": 4696,
+      "sha256": "8d0c611869ef9b39c2ad29180ff1f235c52f474aa78bfaf3d545da2ad996d2d3",
+      "width": 640,
+      "height": 360,
+      "capture_utc": "2026-10-26T04:51:55.873662+00:00"
+    },
+    {
+      "path": "artifacts/screenshots/d1-title-3x.png",
+      "size_bytes": 14579,
+      "sha256": "a2e489029d9f1e617db304ee6015c80ea68766a1dd9ded8b2120db3ff5b5aa7a",
+      "width": 1920,
+      "height": 1080,
+      "capture_utc": "2026-10-26T04:51:55.952816+00:00"
+    }
+  ]
+}

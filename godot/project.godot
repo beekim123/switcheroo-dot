@@ -3,7 +3,7 @@ config_version=5
 
 [application]
 config/name="掉包记 · Switcheroo"
-run/main_scene="res://scenes/title.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/use_custom_user_dir=true
 config/custom_user_dir_name="switcheroo-dot"

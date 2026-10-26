@@ -1,0 +1,86 @@
+{
+  "format": "foes/1",
+  "foes": [
+    {
+      "id": "foe.moondust",
+      "name": "月屑",
+      "kind": "foe",
+      "hp": 5,
+      "max_hp": 5,
+      "guard": 0,
+      "heavy": false,
+      "unbreakable": false,
+      "item": "",
+      "owner": "",
+      "marks": [],
+      "lit": false,
+      "stealth": false,
+      "cycle": [
+        {
+          "kind": "hit",
+          "amount": 3,
+          "target": "player"
+        },
+        {
+          "kind": "move",
+          "target": "adjacent_empty",
+          "fallback": {
+            "kind": "hit",
+            "amount": 3,
+            "target": "player"
+          }
+        }
+      ]
+    },
+    {
+      "id": "foe.rolling_apple",
+      "name": "滚苹果",
+      "kind": "foe",
+      "hp": 4,
+      "max_hp": 4,
+      "guard": 0,
+      "heavy": false,
+      "unbreakable": false,
+      "item": "",
+      "owner": "",
+      "marks": [],
+      "lit": false,
+      "stealth": false,
+      "cycle": [
+        {
+          "kind": "roll",
+          "amount": 3,
+          "target": "player"
+        },
+        {
+          "kind": "guard",
+          "amount": 2,
+          "target": "self"
+        }
+      ]
+    },
+    {
+      "id": "foe.water_lantern",
+      "name": "水灯鬼",
+      "kind": "foe",
+      "hp": 4,
+      "max_hp": 4,
+      "guard": 0,
+      "heavy": false,
+      "unbreakable": false,
+      "item": "",
+      "owner": "",
+      "marks": [],
+      "lit": false,
+      "stealth": false,
+      "cycle": [
+        {
+          "kind": "hit",
+          "amount": 3,
+          "target": "player"
+        }
+      ],
+      "explode": 2
+    }
+  ]
+}

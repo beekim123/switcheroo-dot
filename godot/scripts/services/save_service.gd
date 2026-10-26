@@ -13,8 +13,14 @@ func store(data: Dictionary) -> Error:
 func restore() -> Dictionary:
  if not FileAccess.file_exists(SAVE_PATH):
   return {}
- var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(SAVE_PATH))
+ var parser := JSON.new()
+ var error: Error = parser.parse(FileAccess.get_file_as_string(SAVE_PATH))
+ var parsed: Variant = parser.data if error == OK else null
  if not parsed is Dictionary or parsed.get("version") != VERSION or not parsed.get("data") is Dictionary:
   DirAccess.rename_absolute(SAVE_PATH, SAVE_PATH + ".corrupt-" + str(Time.get_ticks_usec()))
   return {}
  return parsed.data
+
+func quarantine() -> void:
+ if FileAccess.file_exists(SAVE_PATH):
+  DirAccess.rename_absolute(SAVE_PATH, SAVE_PATH + ".corrupt-" + str(Time.get_ticks_usec()))

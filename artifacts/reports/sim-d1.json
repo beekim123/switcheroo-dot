@@ -1,0 +1,1650 @@
+{
+  "deterministic": true,
+  "format": "d1-simulation/1",
+  "note": "Each unique authored starting state is deterministic, not a statistical sample of human play. Cautious disables all signboard rewards and uses position swaps only to dodge.",
+  "rehearsals": [
+    {
+      "first": [
+        {
+          "a": 0,
+          "b": 2,
+          "kind": "swap",
+          "mode": "position"
+        }
+      ],
+      "id": "reh.rain",
+      "solutions": 4
+    },
+    {
+      "first": [
+        {
+          "a": 1,
+          "b": 2,
+          "kind": "swap",
+          "mode": "position"
+        }
+      ],
+      "id": "reh.geese",
+      "solutions": 1
+    },
+    {
+      "first": [
+        {
+          "a": 1,
+          "b": 3,
+          "kind": "swap",
+          "mode": "position"
+        }
+      ],
+      "id": "reh.cart",
+      "solutions": 3
+    },
+    {
+      "first": [
+        {
+          "a": 1,
+          "b": 3,
+          "kind": "swap",
+          "mode": "position"
+        }
+      ],
+      "id": "reh.purse",
+      "solutions": 1
+    },
+    {
+      "first": [
+        {
+          "a": 0,
+          "b": 2,
+          "kind": "swap",
+          "mode": "item"
+        }
+      ],
+      "id": "reh.key",
+      "solutions": 1
+    },
+    {
+      "first": [
+        {
+          "a": 1,
+          "b": 3,
+          "kind": "swap",
+          "mode": "position"
+        }
+      ],
+      "id": "reh.light",
+      "solutions": 1
+    }
+  ],
+  "runs": [
+    {
+      "blanks": {},
+      "commands": [
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 1
+            }
+          ],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "heal",
+              "target": -1
+            },
+            {
+              "a": 2,
+              "b": 4,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 1
+            }
+          ],
+          "turn": 3
+        }
+      ],
+      "duel": "duel.prologue",
+      "duration_ms": 21,
+      "exposed": false,
+      "exposed_turn": null,
+      "final_state_sha256": "0e0821862334f1b156c0f6682cb3a679b0e5f4fb476e32025c99f05b70598aac",
+      "hp": 20,
+      "identical_replays": 20,
+      "outcome": "victory",
+      "reversal": false,
+      "reversal_turn": null,
+      "strategy": "cautious",
+      "turns": 3,
+      "win": true
+    },
+    {
+      "blanks": {},
+      "commands": [
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 1
+            }
+          ],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "heal",
+              "target": -1
+            },
+            {
+              "a": 2,
+              "b": 4,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 1
+            }
+          ],
+          "turn": 3
+        }
+      ],
+      "duel": "duel.prologue",
+      "duration_ms": 19,
+      "exposed": false,
+      "exposed_turn": null,
+      "final_state_sha256": "c32f2a9f96a24e804deeacc6666b37356e53b18d0cba1bc84b7e9478292fea42",
+      "hp": 20,
+      "identical_replays": 20,
+      "outcome": "victory",
+      "reversal": false,
+      "reversal_turn": null,
+      "strategy": "lookahead",
+      "turns": 3,
+      "win": true
+    },
+    {
+      "blanks": {},
+      "commands": [
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 1
+            }
+          ],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 1
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "kind": "heal",
+              "target": -1
+            }
+          ],
+          "turn": 3
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 4
+            }
+          ],
+          "turn": 4
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 4
+            }
+          ],
+          "turn": 5
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 6
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 7
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 8
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 9
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 10
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 11
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 12
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 13
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 14
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 15
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 16
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 17
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 18
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 19
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 20
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 21
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 22
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 23
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 24
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 25
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 26
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 27
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 28
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 29
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 30
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 31
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 32
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 33
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 34
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 35
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 36
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 37
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 38
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 39
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 40
+        }
+      ],
+      "duel": "duel.prologue",
+      "duration_ms": 49,
+      "exposed": false,
+      "exposed_turn": null,
+      "final_state_sha256": "bbb3d7d30300accfff3f88775fed24eeee282b8a48eb9247300ee1553daca2db",
+      "hp": 11,
+      "identical_replays": 20,
+      "outcome": "turn_limit",
+      "reversal": false,
+      "reversal_turn": null,
+      "strategy": "no_swap",
+      "turns": 41,
+      "win": false
+    },
+    {
+      "blanks": {},
+      "commands": [
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 2
+            }
+          ],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "a": 0,
+              "b": 1,
+              "kind": "swap",
+              "mode": "position"
+            },
+            {
+              "kind": "strike",
+              "target": 2
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 2
+            }
+          ],
+          "turn": 3
+        },
+        {
+          "plan": [
+            {
+              "a": 1,
+              "b": 2,
+              "kind": "swap",
+              "mode": "position"
+            },
+            {
+              "kind": "strike",
+              "target": 3
+            }
+          ],
+          "turn": 4
+        },
+        {
+          "plan": [
+            {
+              "kind": "heal",
+              "target": -1
+            },
+            {
+              "a": 2,
+              "b": 3,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 5
+        }
+      ],
+      "duel": "duel.thief",
+      "duration_ms": 51,
+      "exposed": false,
+      "exposed_turn": null,
+      "final_state_sha256": "f8d4ddc2b21da1d694fd587526876498da5d4fc86b303e1a7b7d7c00c4091196",
+      "hp": 20,
+      "identical_replays": 20,
+      "outcome": "victory",
+      "reversal": false,
+      "reversal_turn": null,
+      "strategy": "cautious",
+      "turns": 5,
+      "win": true
+    },
+    {
+      "blanks": {
+        "block": {
+          "source": "stage",
+          "turn": 2
+        },
+        "owner": {
+          "source": "stage",
+          "turn": 2
+        },
+        "touch": {
+          "source": "stage",
+          "turn": 1
+        }
+      },
+      "commands": [
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 2
+            }
+          ],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 0,
+              "b": 2,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "a": 1,
+              "b": 3,
+              "kind": "swap",
+              "mode": "position"
+            },
+            {
+              "kind": "marble",
+              "target": 0
+            }
+          ],
+          "turn": 3
+        },
+        {
+          "plan": [
+            {
+              "a": 1,
+              "b": 2,
+              "kind": "swap",
+              "mode": "position"
+            },
+            {
+              "kind": "strike",
+              "target": 0
+            }
+          ],
+          "turn": 4
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 0,
+              "b": 1,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 5
+        }
+      ],
+      "duel": "duel.thief",
+      "duration_ms": 60,
+      "exposed": true,
+      "exposed_turn": 2,
+      "final_state_sha256": "469f2b5ba16947bf0a3d90df1f794b4abb011954d742df270ca4dd5b635b08f0",
+      "hp": 20,
+      "identical_replays": 20,
+      "outcome": "victory",
+      "reversal": true,
+      "reversal_turn": 3,
+      "strategy": "lookahead",
+      "turns": 5,
+      "win": true
+    },
+    {
+      "blanks": {
+        "owner": {
+          "source": "stage",
+          "turn": 2
+        },
+        "touch": {
+          "source": "stage",
+          "turn": 1
+        }
+      },
+      "commands": [
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 2
+            }
+          ],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [],
+          "turn": 3
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 4
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 3
+            }
+          ],
+          "turn": 5
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 6
+        },
+        {
+          "plan": [],
+          "turn": 7
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 8
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 9
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 10
+        },
+        {
+          "plan": [],
+          "turn": 11
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 12
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 13
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 14
+        },
+        {
+          "plan": [],
+          "turn": 15
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 16
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 17
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 18
+        },
+        {
+          "plan": [],
+          "turn": 19
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 20
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 21
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 22
+        },
+        {
+          "plan": [],
+          "turn": 23
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 24
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 25
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 26
+        },
+        {
+          "plan": [],
+          "turn": 27
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 28
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 29
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 30
+        },
+        {
+          "plan": [],
+          "turn": 31
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 32
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 33
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 34
+        },
+        {
+          "plan": [],
+          "turn": 35
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 36
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 37
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 38
+        },
+        {
+          "plan": [],
+          "turn": 39
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 40
+        }
+      ],
+      "duel": "duel.thief",
+      "duration_ms": 79,
+      "exposed": false,
+      "exposed_turn": null,
+      "final_state_sha256": "cd149b53dca0fb8e0aa3e32f6041fa35008602a6260002e2bf151b5815c7d40e",
+      "hp": 20,
+      "identical_replays": 20,
+      "outcome": "turn_limit",
+      "reversal": false,
+      "reversal_turn": null,
+      "strategy": "no_swap",
+      "turns": 41,
+      "win": false
+    },
+    {
+      "blanks": {},
+      "commands": [
+        {
+          "plan": [],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 0,
+              "b": 2,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 4
+            }
+          ],
+          "turn": 3
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 2,
+              "b": 3,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 4
+        },
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 4
+            },
+            {
+              "a": 3,
+              "b": 4,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 5
+        },
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 3
+            }
+          ],
+          "turn": 6
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 2,
+              "b": 4,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 7
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 0
+            },
+            {
+              "a": 0,
+              "b": 2,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 8
+        },
+        {
+          "plan": [],
+          "turn": 9
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 0,
+              "b": 2,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 10
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 2,
+              "b": 4,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 11
+        }
+      ],
+      "duel": "duel.ferryman",
+      "duration_ms": 132,
+      "exposed": false,
+      "exposed_turn": null,
+      "final_state_sha256": "c75d25e4cbd7826f1a60b82ae7bfef41428fed7906b33190b371d02215d37d58",
+      "hp": 20,
+      "identical_replays": 20,
+      "outcome": "victory",
+      "reversal": false,
+      "reversal_turn": null,
+      "strategy": "cautious",
+      "turns": 11,
+      "win": true
+    },
+    {
+      "blanks": {
+        "hidden": {
+          "source": "stage",
+          "turn": 2
+        },
+        "lamp": {
+          "source": "stage",
+          "turn": 1
+        },
+        "light": {
+          "source": "stage",
+          "turn": 2
+        }
+      },
+      "commands": [
+        {
+          "plan": [],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            },
+            {
+              "a": 0,
+              "b": 2,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 4
+            },
+            {
+              "a": 2,
+              "b": 4,
+              "kind": "swap",
+              "mode": "item"
+            }
+          ],
+          "turn": 3
+        },
+        {
+          "plan": [
+            {
+              "a": 2,
+              "b": 3,
+              "kind": "swap",
+              "mode": "position"
+            },
+            {
+              "kind": "strike",
+              "target": 4
+            }
+          ],
+          "turn": 4
+        },
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 4
+            },
+            {
+              "a": 3,
+              "b": 4,
+              "kind": "swap",
+              "mode": "position"
+            }
+          ],
+          "turn": 5
+        },
+        {
+          "plan": [
+            {
+              "kind": "strike",
+              "target": 3
+            }
+          ],
+          "turn": 6
+        }
+      ],
+      "duel": "duel.ferryman",
+      "duration_ms": 126,
+      "exposed": true,
+      "exposed_turn": 2,
+      "final_state_sha256": "e5ccb6054184257534b5f2feb8b1a8aca69d1c7d234078474fde4140a5d842d6",
+      "hp": 20,
+      "identical_replays": 20,
+      "outcome": "victory",
+      "reversal": true,
+      "reversal_turn": 3,
+      "strategy": "lookahead",
+      "turns": 6,
+      "win": true
+    },
+    {
+      "blanks": {
+        "hidden": {
+          "source": "stage",
+          "turn": 2
+        },
+        "lamp": {
+          "source": "stage",
+          "turn": 1
+        },
+        "light": {
+          "source": "stage",
+          "turn": 2
+        }
+      },
+      "commands": [
+        {
+          "plan": [],
+          "turn": 1
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 2
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 4
+            }
+          ],
+          "turn": 3
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 4
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 5
+        },
+        {
+          "plan": [
+            {
+              "kind": "marble",
+              "target": 4
+            }
+          ],
+          "turn": 6
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 7
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 8
+        },
+        {
+          "plan": [
+            {
+              "kind": "heal",
+              "target": -1
+            }
+          ],
+          "turn": 9
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 10
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 11
+        },
+        {
+          "plan": [],
+          "turn": 12
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 13
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 14
+        },
+        {
+          "plan": [],
+          "turn": 15
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 16
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 17
+        },
+        {
+          "plan": [],
+          "turn": 18
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 19
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 20
+        },
+        {
+          "plan": [],
+          "turn": 21
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 22
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 23
+        },
+        {
+          "plan": [],
+          "turn": 24
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 25
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 26
+        },
+        {
+          "plan": [],
+          "turn": 27
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 28
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 29
+        },
+        {
+          "plan": [],
+          "turn": 30
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 31
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 32
+        },
+        {
+          "plan": [],
+          "turn": 33
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 34
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 35
+        },
+        {
+          "plan": [],
+          "turn": 36
+        },
+        {
+          "plan": [
+            {
+              "kind": "guard",
+              "target": -1
+            }
+          ],
+          "turn": 37
+        },
+        {
+          "plan": [],
+          "turn": 38
+        }
+      ],
+      "duel": "duel.ferryman",
+      "duration_ms": 67,
+      "exposed": true,
+      "exposed_turn": 2,
+      "final_state_sha256": "90784b6a1a7891cc5df990fb9bd0b7a3353bf40197b8834ef4000567dc512fa3",
+      "hp": 0,
+      "identical_replays": 20,
+      "outcome": "defeat",
+      "reversal": false,
+      "reversal_turn": null,
+      "strategy": "no_swap",
+      "turns": 38,
+      "win": false
+    }
+  ]
+}

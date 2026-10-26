@@ -1,0 +1,55 @@
+{
+  "format": "banter/1",
+  "banter": [
+    {
+      "trigger": "self_hit",
+      "speaker": "葛伦",
+      "text": "哈，这招我也用过！"
+    },
+    {
+      "trigger": "touch",
+      "speaker": "阿扒",
+      "text": "摸一下！"
+    },
+    {
+      "trigger": "first_block",
+      "speaker": "阿扒",
+      "text": "嘿嘿，它替我挨。"
+    },
+    {
+      "trigger": "granny_shout_t2",
+      "speaker": "婆婆",
+      "text": "那是我的筐子！"
+    },
+    {
+      "trigger": "extinguish",
+      "speaker": "老乔",
+      "text": "借一点光。"
+    },
+    {
+      "trigger": "first_hidden",
+      "speaker": "阿鸣",
+      "text": "他不见了！"
+    },
+    {
+      "trigger": "exposed",
+      "speaker": "观众",
+      "text": "哦——"
+    },
+    {
+      "trigger": "reversal.return_owner",
+      "speaker": "阿扒",
+      "text": "筐子你怎么——哎哟！"
+    },
+    {
+      "trigger": "reversal.return_light",
+      "speaker": "老乔",
+      "text": "……这么亮啊。"
+    },
+    {
+      "trigger": "defeat",
+      "speaker": "葛伦",
+      "text": "看懂的不会忘。再来一出。"
+    }
+  ]
+}
