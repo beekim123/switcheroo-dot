@@ -1,0 +1,9 @@
+# Local tools, caches, and isolated saves
+Godot.app/
+node_modules/
+godot/.godot/
+build/
+.cache/
+.local/
+.DS_Store
+*.tmp
